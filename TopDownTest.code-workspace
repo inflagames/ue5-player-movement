@@ -1,0 +1,865 @@
+{
+	"folders": [
+		{
+			"name": "TopDownTest",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "TopDownTest Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"Linux",
+					"Debug",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"Linux",
+					"Debug",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TopDownTest Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"Linux",
+					"Debug",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"Linux",
+					"DebugGame",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"Linux",
+					"DebugGame",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TopDownTest Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"Linux",
+					"DebugGame",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"Linux",
+					"Development",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"Linux",
+					"Development",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TopDownTest Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"Linux",
+					"Development",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest Linux Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"Linux",
+					"Test",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest Linux Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"Linux",
+					"Test",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TopDownTest Linux Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest Linux Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"Linux",
+					"Test",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest Linux Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"Linux",
+					"Shipping",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest Linux Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"Linux",
+					"Shipping",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TopDownTest Linux Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest Linux Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"Linux",
+					"Shipping",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest LinuxArm64 Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"LinuxArm64",
+					"Debug",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest LinuxArm64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"LinuxArm64",
+					"Debug",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TopDownTest LinuxArm64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest LinuxArm64 Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"LinuxArm64",
+					"Debug",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest LinuxArm64 DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest LinuxArm64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TopDownTest LinuxArm64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest LinuxArm64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest LinuxArm64 Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"LinuxArm64",
+					"Development",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest LinuxArm64 Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"LinuxArm64",
+					"Development",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TopDownTest LinuxArm64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest LinuxArm64 Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"LinuxArm64",
+					"Development",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest LinuxArm64 Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"LinuxArm64",
+					"Test",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest LinuxArm64 Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"LinuxArm64",
+					"Test",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TopDownTest LinuxArm64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest LinuxArm64 Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"LinuxArm64",
+					"Test",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest LinuxArm64 Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"LinuxArm64",
+					"Shipping",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest LinuxArm64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"LinuxArm64",
+					"Shipping",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TopDownTest LinuxArm64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTest LinuxArm64 Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTest",
+					"LinuxArm64",
+					"Shipping",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTestEditor Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTestEditor",
+					"Linux",
+					"Debug",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTestEditor Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTestEditor",
+					"Linux",
+					"Debug",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TopDownTestEditor Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTestEditor Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTestEditor",
+					"Linux",
+					"Debug",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTestEditor Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTestEditor",
+					"Linux",
+					"DebugGame",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTestEditor Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTestEditor",
+					"Linux",
+					"DebugGame",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TopDownTestEditor Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTestEditor Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTestEditor",
+					"Linux",
+					"DebugGame",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTestEditor Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTestEditor",
+					"Linux",
+					"Development",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTestEditor Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTestEditor",
+					"Linux",
+					"Development",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TopDownTestEditor Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			},
+			{
+				"label": "TopDownTestEditor Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TopDownTestEditor",
+					"Linux",
+					"Development",
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch TopDownTest (Debug)",
+				"request": "launch",
+				"program": "/home/guillermo/Documents/Unreal Projects/TopDownTest/Binaries/Linux/UnrealGame-Linux-Debug",
+				"preLaunchTask": "TopDownTest Linux Debug Build",
+				"args": [
+				],
+				"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3",
+				"type": "cppdbg",
+				"visualizerFile": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch TopDownTest (DebugGame)",
+				"request": "launch",
+				"program": "/home/guillermo/Documents/Unreal Projects/TopDownTest/Binaries/Linux/UnrealGame-Linux-DebugGame",
+				"preLaunchTask": "TopDownTest Linux DebugGame Build",
+				"args": [
+				],
+				"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3",
+				"type": "cppdbg",
+				"visualizerFile": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch TopDownTest (Development)",
+				"request": "launch",
+				"program": "/home/guillermo/Documents/Unreal Projects/TopDownTest/Binaries/Linux/UnrealGame",
+				"preLaunchTask": "TopDownTest Linux Development Build",
+				"args": [
+				],
+				"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3",
+				"type": "cppdbg",
+				"visualizerFile": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch TopDownTest (Test)",
+				"request": "launch",
+				"program": "/home/guillermo/Documents/Unreal Projects/TopDownTest/Binaries/Linux/UnrealGame-Linux-Test",
+				"preLaunchTask": "TopDownTest Linux Test Build",
+				"args": [
+				],
+				"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3",
+				"type": "cppdbg",
+				"visualizerFile": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch TopDownTest (Shipping)",
+				"request": "launch",
+				"program": "/home/guillermo/Documents/Unreal Projects/TopDownTest/Binaries/Linux/UnrealGame-Linux-Shipping",
+				"preLaunchTask": "TopDownTest Linux Shipping Build",
+				"args": [
+				],
+				"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3",
+				"type": "cppdbg",
+				"visualizerFile": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch TopDownTestEditor (Debug)",
+				"request": "launch",
+				"program": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
+				"preLaunchTask": "TopDownTestEditor Linux Debug Build",
+				"args": [
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject"
+				],
+				"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3",
+				"type": "cppdbg",
+				"visualizerFile": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch TopDownTestEditor (DebugGame)",
+				"request": "launch",
+				"program": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
+				"preLaunchTask": "TopDownTestEditor Linux DebugGame Build",
+				"args": [
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject"
+				],
+				"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3",
+				"type": "cppdbg",
+				"visualizerFile": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch TopDownTestEditor (Development)",
+				"request": "launch",
+				"program": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3/Engine/Binaries/Linux/UnrealEditor",
+				"preLaunchTask": "TopDownTestEditor Linux Development Build",
+				"args": [
+					"/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject"
+				],
+				"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3",
+				"type": "cppdbg",
+				"visualizerFile": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Linux Development Build",
+				"program": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3/Engine/Build/BatchFiles/RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=/home/guillermo/Documents/Unreal Projects/TopDownTest/TopDownTest.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "internalConsole",
+				"internalConsoleOptions": "openOnSessionStart",
+				"stopAtEntry": false,
+				"cwd": "/home/guillermo/Downloads/Linux_Unreal_Engine_5.4.3"
+			}
+		]
+	}
+}
